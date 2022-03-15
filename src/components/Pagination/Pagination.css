@@ -1,0 +1,35 @@
+nav{
+    height: fit-content;
+    width: fit-content;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+}
+
+li{
+    margin: 2px;
+    list-style: none;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(194, 194, 194);
+    text-decoration: none;
+}
+
+li:hover{
+    background-color: rgba(232, 231, 231, 0.66);
+}
+
+a {
+    color: rgb(73, 122, 245);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}

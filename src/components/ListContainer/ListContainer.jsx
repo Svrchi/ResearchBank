@@ -1,10 +1,21 @@
-// import React, { useState } from 'react';
+import React from 'react';
+import ListItem from '../ListItem/ListItem';
+import './ListContainer.css'
 
 
-const ListContainer = () => {
+const ListContainer = ({cache, loading}) => {
+
+    const singleItems = cache.map(( item,index) => { 
+        return <ListItem cache={item} key={index} />
+    })
+
+if (loading) {
+    return <h2> loading </h2>
+}
     return (
-        <div className='header'>
-            <span className='title'>Word Hunt</span>
+        <div className='list-container'>
+            {/* <ListItem cache={cache}/> */}
+            {singleItems}
         </div>
     )
 }
