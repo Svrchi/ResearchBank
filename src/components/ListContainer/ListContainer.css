@@ -4,8 +4,9 @@
     justify-content: flex-start;
     align-items:center;
     height: 80%;
+    min-height: 70%;
     width: 60%;
     border: 10px solid rgb(194, 194, 194);
     border-radius: 5%;
-    overflow-y: scroll;
+    overflow-y: visible;
 }
